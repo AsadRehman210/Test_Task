@@ -1,0 +1,94 @@
+/* Container to center the calendar */
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  /* background-color: gray; */
+  box-shadow: 0 5px 15px 0 rbg(0 0 0 0.1);
+  border-radius: 10px;
+}
+
+/* Custom calendar styling */
+.custom-calendar {
+  border: none;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  max-width: 450px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  /* opacity: 0.7; */
+}
+
+/* Weekday header styling */
+.custom-calendar .react-calendar__month-view__weekdays {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: black; /* Light gray text */
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+abbr[title] {
+  text-decoration: none;
+ }
+
+/* Tile (date cell) styling */
+.custom-calendar .react-calendar__tile {
+  position: relative;
+  padding: 15px 0;
+  font-size: 1rem;
+  text-align: center;
+  color: black; /* Dark gray for regular dates */
+}
+
+/* Styling for the active (current) date */
+.active-tile {
+  background-color: #3b82f6; /* Blue background */
+  color: white; /* White text */
+  border-radius: 50%; /* Circular shape */
+  font-weight: bold;
+}
+
+/* Styling for tiles with dots */
+.dot {
+  width: 4px;
+  height: 4px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  margin: 4px auto 0;
+}
+
+/* Disable outline on focused elements */
+.custom-calendar .react-calendar__tile:focus {
+  outline: none;
+}
+
+/* Optional: Styling for weekend dates */
+.custom-calendar .react-calendar__month-view__days__day--weekend {
+  color: #9ca3af; /* Light gray for weekends */
+}
+
+/* Arrow button styling */
+.arrow {
+  font-size: 1.25rem;
+  color: black; /* Medium gray for arrows */
+}
+
+/* Month-Year header styling */
+.custom-calendar .react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-calendar .month-year {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: black; /* Dark gray */
+}
